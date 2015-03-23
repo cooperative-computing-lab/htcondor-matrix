@@ -9,7 +9,9 @@ where the color represents the user running a job on the slot,
 or the machine state.  The size of the rectangle represents either
 the cores or memory used by that job.
 
-[Example Image](example.png)
+## Examples
+
+<a href=example.png><img src="example.png" width=256 height=160></a>
 
 [Live Matrix Display at Notre Dame](http://condor.cse.nd.edu/condor_matrix.cgi)
 

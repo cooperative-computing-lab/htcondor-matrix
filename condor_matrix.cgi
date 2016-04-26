@@ -215,7 +215,7 @@ a.u6  { background-color:\#FFF; }
 a.u7  { background-color:\#AAA; }
 a.u8  { background-color:\#888; }
 a.u9  { background-color:\#444; }
-a.u10 { background-color:\#000; border:1px solid white; }
+a.u10 { background-color:\#111; }
 </style>
 </head>
 <body>

@@ -12,6 +12,7 @@ the cores or memory used by that job.
 ## Examples
 
 <a href=example.png><img src="example.png" width=256 height=160></a>
+<a href=example2.png><img src="example2.png" width=256 height=160></a>
 
 [Live Matrix Display at Notre Dame](http://condor.cse.nd.edu/condor_matrix.cgi)
 

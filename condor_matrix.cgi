@@ -64,7 +64,8 @@ sub compare_machine_memory {
 # by slot ID.  This is a bit complex because slot names may
 # have the following forms:
 #   machine.cse.nd.edu
-#   slot#.cse.nd.edu
+#   slot#@machine.cse.nd.edu
+#   slot#_#@machine.cse.nd.edu
 
 sub compare_machine_name {
 	my ($slot_a, $machine_a) = split(/@/,$a);
@@ -81,9 +82,7 @@ sub compare_machine_name {
 	}
 
 	if($machine_a eq $machine_b) {
-		my $num_a = substr($slot_a,4);
-		my $num_b = substr($slot_b,4);
-		return $num_a cmp $num_b;
+		return $slot_a cmp $slot_b;
 	} else {
 		return $machine_a cmp $machine_b;
 	}

@@ -129,8 +129,6 @@ foreach $line (@data) {
        	chomp $line;
 	($name,$state,$cores,$memory,$user) = split "\t", $line;
 
-	next if($cores==0);
-
        	if($state eq "Claimed") {
 		$cores_by_user{$user}+=$cores;
 		$memory_by_user{$user}+=$memory;
@@ -308,6 +306,7 @@ foreach $line (@data) {
         	chomp $line;
 		($name,$state,$cores,$memory,$user) = split "\t", $line;
 
+		# Do not display zero-core partitionable slots.
 		next if($cores==0);
 
 		if($state eq "Unclaimed") {
